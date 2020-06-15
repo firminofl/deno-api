@@ -73,7 +73,7 @@ The form to work with the request it's different of Node.
 The method updateChapter in youtube-chapter-controller, if it was done in Node:
 ```node
 updateChapter(req, res, next) {
-    const { id, params } = req.params;
+    const { id, seconds } = req.params;
 
     // Code here...
 }
