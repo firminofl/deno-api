@@ -10,7 +10,7 @@ Since Deno and Node.js serve the same purpose, it's possible to compare the two 
 |:-----------------------:|:---------------------:|:---------------------:|
 |          Engine         |           V8          |           V8          |
 |         Written in      |   C++ & JavaScript    |   Rust & Typescript   |
-|      Package managing   | package managers: npm |        Uses URLs      |
+|      Package managing   | Package managers: npm |        Uses URLs      |
 |      Importing packages |    CommonJS syntax    |      ES Modules       |
 |         Security        |       Full access     |   Permissioned access |
 |      TypeScript support |      Not built in     | 	   Built in       |
@@ -68,7 +68,8 @@ The example was worked here it's to get the chapters in description of YouTube V
 
 The form to work with the request it's different of Node.
 
-- Exemple
+- Example:
+
 The method updateChapter in youtube-chapter-controller, if it was done in Node:
 ```node
 updateChapter(req, res, next) {
@@ -91,3 +92,14 @@ const updateChapter = async (
     },
 ) => { //Code here...}
 ```
+
+## Run the API
+For to run the API developed in Deno, you need to run the script run.sh.
+
+Example:
+```shell
+sudo ./run.sh
+```
+
+The Deno needs permissions to execute any tasks for example: access the network to provide the server, file system and others permissions.
+And the permissions it's flaged in command to run the Deno, so we create a script in Shell to agilize the process.
