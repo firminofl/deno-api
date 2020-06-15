@@ -7,7 +7,7 @@ Ryan Dahl the original creator of Node.js (the popular server-side JavaScript ru
 Since Deno and Node.js serve the same purpose, it's possible to compare the two directly.
 
 |                         |          Node         |           Deno        |
-|-------------------------------------------------------------------------|
+|:-----------------------:|:---------------------:|:---------------------:|
 |          Engine         |           V8          |           V8          |
 |         Written in      |   C++ & JavaScript    |   Rust & Typescript   |
 |      Package managing   | package managers: npm |        Uses URLs      |
@@ -79,7 +79,7 @@ updateChapter(req, res, next) {
 ```
 
 The same method now done in Deno:
-```deno
+```node
 const updateChapter = async (
     { params, request, response }: {
         params: {
