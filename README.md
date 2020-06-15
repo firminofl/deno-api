@@ -7,7 +7,7 @@ Ryan Dahl the original creator of Node.js (the popular server-side JavaScript ru
 Since Deno and Node.js serve the same purpose, it's possible to compare the two directly.
 
 |                         |          Node         |           Deno        |
----------------------------------------------------------------------------
+|-------------------------------------------------------------------------|
 |          Engine         |           V8          |           V8          |
 |         Written in      |   C++ & JavaScript    |   Rust & Typescript   |
 |      Package managing   | package managers: npm |        Uses URLs      |
@@ -20,38 +20,38 @@ Deno ships as a single executable with no dependencies. You can install it using
 
 - Shell (Mac, Linux):
 ```shell
-curl -fsSL https://deno.land/x/install/install.sh | sh
+$ curl -fsSL https://deno.land/x/install/install.sh | sh
 ```
 
 - PowerShell (Windows):
 ```shell
-iwr https://deno.land/x/install/install.ps1 -useb | iex
+$ iwr https://deno.land/x/install/install.ps1 -useb | iex
 ```
 
 - Homebrew (Mac):
 ```shell
-brew install deno
+$ brew install deno
 ```
 
 - Chocolatey (Windows):
 ```shell
-choco install deno
+$ choco install deno
 ```
 
 ## Getting started
-Try runnig a simple program:
+Try running a simple program:
 ```shell
 /home/<user>/.deno/bin/deno run https://deno.land/std/examples/welcome.ts
 ```
 
-NOTE: the <user> it is your computer.
+NOTE: the user it is your computer.
 In my example it is: 
 ```shell
 /home/filipe/.deno/bin/deno run https://deno.land/std/examples/welcome.ts
 ```
 You can to verify the version of Deno:
 ```shell
-/home/filipe/.deno/bin/deno --version
+/home/<user>/.deno/bin/deno --version
 ```
 The expected output:
 ```shell
